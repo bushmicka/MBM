@@ -10,7 +10,7 @@
 .contact {
     width: 100%;
     height: 50px;
-    background-color: #8e8e8e;
+    background-color: #000;
     display: flex;
     justify-content: space-around;
 }
@@ -222,7 +222,7 @@ nav ul li a:hover {
 /* Stylisation du bouton"Services principaux" */
 
 .bt {
-    padding: 10px 20px;
+    padding: 20px 50px;
     background-color: transparent;
     color: #ffff;
     border: 2px solid #fff;
@@ -335,22 +335,6 @@ button[type=submit]:hover {
     padding-bottom: 10px;
 }
 
-
-/* .service button {
-            background: transparent;
-            /* width: 200px; */
-
-
-/* margin-top: 40px; */
-
-
-/* height: auto; */
-
-
-/* border-radius: 10px;
-
-        } */
-
 .service a {
     display: inline-block;
     font-size: 18px;
@@ -421,19 +405,86 @@ button[type=submit]:hover {
 }
 
 
-/* Section "notre équipe" */
+/* Section notre équipe */
 
-.slider {
+.equipe h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #0a426c;
+    margin-top: 150px;
+}
+
+.dirigeants {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    justify-content: center;
 }
 
-.slide {
-    flex: 0 0 auto
+.dirigeants img {
+    width: 200px;
+    border-radius: 20px;
 }
 
-img {
-    width: 100%;
-    height: auto;
+.ron {
+    text-align: center;
+}
+
+.mik {
+    text-align: center;
+}
+
+.aron {
+    text-align: center;
+}
+
+.footer {
+    height: 60vh;
+    background: #000;
+    margin-top: 10%;
+}
+
+.debut {
+    display: flex;
+    color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16.6px;
+    height: 350px;
+    line-height: 2.2rem;
+}
+
+.f0 img {
+    width: 150px;
+}
+
+.f1 {
+    display: grid;
+    grid-template-columns: 1r;
+    align-items: center;
+}
+
+.f1 img {
+    width: 40px;
+}
+
+.end {
+    border-top: 2px solid #8e8e8e;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 20%;
+    background-color: #000;
+}
+
+
+/* titre du footer */
+
+.Acceuil {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.title-1 {
+    margin: 50px 0 50px 0;
 }
