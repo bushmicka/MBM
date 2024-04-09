@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Stylisation du menu contenant les informations de contact de MBM */
+
+.contact {
+    width: 100%;
+    height: 50px;
+    background-color: #8e8e8e;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Stylisation du bloc contenant le mail et le numéro de telephone */
+
+.contact-1 {
+    display: flex;
+    gap: 20px;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    color: #0a426c;
+}
+
+.mail img {
+    width: 40px;
+}
+
+.tel {
+    display: flex;
+    align-items: center;
+    color: #0a426c;
+}
+
+.tel img {
+    width: 40px;
+}
+
+
+/* Stylisation du bloc contenant les icones dirigeant vers les comptes twiter, facebook et linkedin de MBM */
+
+.contact-2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.twitter {
+    display: flex;
+    align-items: center;
+}
+
+.twitter img {
+    width: 40px;
+}
+
+.facebook {
+    display: flex;
+    align-items: center;
+}
+
+.facebook img {
+    width: 40px;
+}
+
+.linkedin {
+    display: flex;
+    align-items: center;
+}
+
+.linkedin img {
+    width: 40px;
+}
+
+
+/* Stylisation du bloc contenant la bannière */
+
+.container {
+    width: 100%;
+    height: 92.8vh;
+    background: linear-gradient(rgba(32, 3, 3, 0.602), rgba(32, 3, 3, 0.52)), url(/media/images/techno-cristiano-firmani-tmTidmpILWw-unsplash.jpg) center/cover;
+}
+
+
+/* Stylisation du logo */
+
+.logo img {
+    width: 100px;
+}
+
+
+/* Stylisation de la bare de navigation */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20%;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Effet rendant les liens du menu rouge au survol */
+
+nav ul li :hover {
+    color: #ea4335;
+}
+
+
+/* Effet rendant les liens du menu soulignés en bleu au survol */
+
+nav ul li a:hover {
+    border-bottom: 2px solid #0a426c;
+}
+
+
+/* Stylisation du corps de la bannière */
+
+.contain-ban {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    gap: 100px;
+    text-align: center;
+    margin-top: 8%;
+}
+
+
+/* Stylisation du h3 de la bannière */
+
+.texte-bannière h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    animation-name: moveInToLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 10px;
+}
+
+
+/* Animation faisant apparaitre le h3 proressivement en partant de la gauche */
+
+@keyframes moveInToLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-100px);
+    }
+    80% {
+        transform: translate(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+/* Stylisation du h1 de la bannière */
+
+.texte-bannière h1 {
+    margin-bottom: 3%;
+    span {
+        color: #ea4335;
+    }
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Gill Sans',
+    'Gill Sans MT',
+    Calibri,
+    'Trebuchet MS',
+    sans-serif;
+    letter-spacing: 5px;
+    animation-name: moveInToRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+
+/* Animation faisant apparaitre le h1 proressivement en partant de la droite */
+
+@keyframes moveInToRight {
+    0% {
+        opacity: 0;
+        transform: translate(100px);
+    }
+    80% {
+        transform: translate(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+/* Stylisation du bouton"Services principaux" */
+
+.bt {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.bt a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    padding-top: 20px;
+}
+
+
+/* Effet du bouton"Services principaux" le rendant rouge au survol */
+
+button:hover {
+    background-color: #ea4335;
+}
+
+
+/* Stylisation de la barre de recherche */
+
+.search-container {
+    text-align: center;
+}
+
+
+/* Stylisation du champ d'entrée */
+
+input[type=text] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px 0 0;
+    font-size: 16px;
+    outline: none;
+    vertical-align: middle;
+}
+
+
+/* Stylisation du bouton "Rechercher" */
+
+button[type=submit] {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    /* border-radius: 0 5px 5px 0; */
+    border-radius: 0 0 50px;
+    cursor: pointer;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+
+/* Stylisation de l'image "loupe" contenue dans le bouton "Rechercher" */
+
+button[type=submit] img {
+    width: 16px;
+    height: auto;
+}
+
+
+/* Effet du bouton "rechercher" le rendant rouge au survol*/
+
+button[type=submit]:hover {
+    background-color: #ea4335;
+}
+
+
+/* Stylisation du titre "Nos services" */
+
+.nos_services h1 {
+    text-align: center;
+    margin: 150px 0 50px 0;
+    color: #0a426c;
+    font-size: 32px;
+}
+
+
+/* Stylisation des cartes de services MBM */
+
+.carte {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service {
+    border: 1px solid #0a426c;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    color: #0a426c;
+    padding: 10px 10px 0 10px;
+}
+
+.service img {
+    width: 50px;
+}
+
+.service h2 {
+    padding-bottom: 10px;
+}
+
+
+/* .service button {
+            background: transparent;
+            /* width: 200px; */
+
+
+/* margin-top: 40px; */
+
+
+/* height: auto; */
+
+
+/* border-radius: 10px;
+
+        } */
+
+.service a {
+    display: inline-block;
+    font-size: 18px;
+    color: #0a426c;
+    padding-top: 60px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.service a:hover {
+    letter-spacing: 5px;
+}
+
+
+/* Stylisation du bloc "A propos de nous" */
+
+.A_propos {
+    height: 75vh;
+    background: linear-gradient(45deg, #ccc, #8e8e8e, #0a426c, #ea4335);
+    background-size: 900% 200%;
+    animation: animate 20s linear infinite;
+    border-radius: 100px;
+    margin: 80px 50px 80px 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 10% 0 10%;
+}
+
+
+/* Animatiion faisant défiler les dégradés de couleurs */
+
+@keyframes animate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.titre-a_propos {
+    text-align: center;
+    color: #0a426c;
+    margin-top: 150px;
+    font-size: 32px;
+}
+
+.info {
+    display: flex;
+    gap: 0%;
+}
+
+.image {
+    width: 70%;
+}
+
+.texte {
+    display: flex;
+    align-items: center;
+    font-size: 16.6px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+
+/* Section "notre équipe" */
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    flex: 0 0 auto
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
